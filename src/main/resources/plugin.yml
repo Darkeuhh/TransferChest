@@ -2,3 +2,13 @@ name: TransferChest
 version: 1.0
 api-version: 1.19
 main: fr.clementdarkk.transferchest.main
+commands:
+  chest:
+    description: Ouvre le coffre public
+    permission: chest.open
+  chestsize:
+    description: Modifie la taille du coffre public
+    permission: chest.size
+  chestbroadcast:
+    description: Active/désactive la diffusion du message d'ouverture du coffre public
+    permission: chest.broadcast
