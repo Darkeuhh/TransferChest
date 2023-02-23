@@ -5,6 +5,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import fr.clementdarkk.transferchest.main;
+import fr.clementdarkk.transferchest.listeners.chestListener;
 import org.bukkit.configuration.file.FileConfiguration;
 
 import java.io.IOException;
@@ -34,6 +35,7 @@ public class sizeCommand implements CommandExecutor {
                     e.printStackTrace();
                 }
                 sender.sendMessage("§dTaille du coffre public modifiée à : §b"+parseInt(strings[0])*9+" slots");
+                chestListener.changeSize();
             }
             else{
                 sender.sendMessage("§cUtilisez : /chestsize <taille du coffre>");
